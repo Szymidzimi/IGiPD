@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2.	Interakcja w 3D </title>
+  <meta charset="utf-8" />
+  <style>
+    body {
+      margin: 0;
+    }
+    #info1 {
+      position: absolute;
+      top: 0px;
+      bottom: 0px;
+      right: 10px;
+      z-index: 99;
+      display: block;
+      color: white;
+      font-size: 18px;
+    }
+    #info2 {
+      position: absolute;
+      top: 0px;
+      bottom: 0px;
+      left: 10px;
+      z-index: 99;
+      display: block;
+      color: white;
+      font-size: 18px;
+    }
+    .buttons {
+      position: absolute;
+      bottom: 10px;
+      margin-left: auto;
+      margin-right: auto;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      display: block;
+      color: white;
+      text-align: center;
+    }
+    .buttons button {
+      width: 50px;
+      height: 25px;
+      color: red;
+      font-size: 16px;
+    }
+  </style>
+  <script src="three.js" defer></script>
+  <script src="OrbitControls.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div id="info1">
+    <h3>Sterowanie:</h3>
+
+    Poruszanie sześcianem - kliknięcie w przyciski ponieżej + Strzałki<br>   
+    Poruszanie kamerą - (Strzałki + alt)   <br>   
+
+  </div>
+  <div id="info2">
+    <h3>Sterowanie:</h3>
+
+    Rotacja kamery wokół sześcianów <br>  
+    Przytrzymanie Lewego przycisku myszy + poruszanie myszką<br>  
+    Pokrętło służy do przyblizenia lub oddalenia kamery od obiektów <br>     
+
+  </div>
+  <div class="buttons">
+  <h3>Kontrola Pojedyńczych kostek<h3>
+    <button id="but1">1</button>
+    <button id="but2">2</button>
+    <button id="but3">3</button>
+    <button id="but4">4</button>
+  </div>
+</body>
+</html>
